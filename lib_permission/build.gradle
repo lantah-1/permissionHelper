@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply from: "$rootProject.projectDir/mavenpush.gradle"
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        lamandys {
+            storeFile file(LAMANDYS_STROEFILE)
+            storePassword LAMANDYS_STOREPASSWORD
+            keyAlias LAMANDYS_KEY_ALIAS
+            keyPassword LAMANDYS_KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.lamandys
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+}

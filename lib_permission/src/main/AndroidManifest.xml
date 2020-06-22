@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lamandys.permission">
+
+    <application>
+        <activity
+            android:name="com.lamandys.permission.setting.AppSettingsDialogHolderActivity"
+            android:theme="@style/Permissions_Transparent_Style"/>
+    </application>
+</manifest>

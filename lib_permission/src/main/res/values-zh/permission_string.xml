@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_dialog_title">应用权限申请</string>
+    <string name="permission_rejected_hint">您已拒绝过权限，没有权限无法服务，请授予权限吧</string>
+    <string name="permission_rationale_ask_again">应用程序因缺少相关权限而无法正常工作.前往应用设置界面以修改相关权限.</string>
+    <string name="permission_go_setting">去设置</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_confirm">确认</string>
+</resources>

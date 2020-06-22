@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_dialog_title">Permissions Required</string>
+    <string name="permission_rejected_hint">We are unable to serve you without authorization. Please grant the access permissions.</string>
+    <string name="permission_rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="permission_go_setting">Go to Settings</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_confirm">Confirm</string>
+</resources>
